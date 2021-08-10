@@ -22,4 +22,6 @@
     python manage.py makemigrations
     python manage.py migrate
 12- Enregistrer les models movie et rating dans admin.py
-    
+13- creer le fichier serializers.py et le configurer pour afficher nos models dans l'api
+14- configurer views.py pour le serializer
+15- Enregistrer les urls dans api/urls.py
