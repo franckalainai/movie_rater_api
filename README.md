@@ -25,3 +25,4 @@
 13- creer le fichier serializers.py et le configurer pour afficher nos models dans l'api
 14- configurer views.py pour le serializer
 15- Enregistrer les urls dans api/urls.py
+16- Personnaliser les methodes de movies et ratings dans views.py
