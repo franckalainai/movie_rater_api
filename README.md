@@ -11,3 +11,9 @@
     django-admin startapp api
 6- notre premiere migration
     python manage.py migrate
+7- inserer api et rest_framework dans notre ficher settings.py
+    'rest_framework',
+    'api',
+8- python manage.py migrate
+9- créer le super user
+    python manage.py createsuperuser
