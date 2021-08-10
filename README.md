@@ -17,3 +17,9 @@
 8- python manage.py migrate
 9- créer le super user
     python manage.py createsuperuser
+10- creation de nos models movie et rating
+11- migrations de nos models
+    python manage.py makemigrations
+    python manage.py migrate
+12- Enregistrer les models movie et rating dans admin.py
+    
