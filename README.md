@@ -25,4 +25,10 @@
 13- creer le fichier serializers.py et le configurer pour afficher nos models dans l'api
 14- configurer views.py pour le serializer
 15- Enregistrer les urls dans api/urls.py
-16- Personnaliser les methodes de movies et ratings dans views.py
+16- Personnaliser les methodes create et update pour rating dans views.py
+17- obtenir le nombre de rating pour un movie
+    creer un fonction no_of_ratings() dans la class Movie de models.py pour obtenir le nombre de rating
+    inclure la fonciton dans la class MovieSerializer dans serializers.py
+18- obtenir la moyenne des ratings
+    creer une fonction avg_rating() dans la class Movie de models.py 
+    inclure la fonction dans MovieSerializer dans serializers.py
