@@ -79,3 +79,31 @@
     dans settings.py creer l'objet REST_FRAMEWORK et le configurer pour restreindre l'accès aux
     simples users, pour cela ajouter permission_classes dans views.py pour proteger la route souhaitée
     dans la classe MovieViewSet par exemple
+
+27- CORS Policy
+    Configurer CORS pour que notre API puisse communiquer avec d'autres applications
+    pip install django-cors-headers
+
+    puis dans settings.py:
+
+    INSTALLED_APPS = [
+    ...,
+    "corsheaders",
+    ...,
+    ]
+
+    Ajouter les middleware:
+    MIDDLEWARE = [
+    ...,
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    ...,
+    ]
+
+    Ajouter CORS_ALLOWED_ORIGINS:
+    CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:8080",
+    "http://127.0.0.1:9000",
+    ]
