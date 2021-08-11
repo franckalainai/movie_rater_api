@@ -72,3 +72,10 @@
     dans urls.pi du repertoire api, enregistrer le UserViewSet
 
 25- créer un utilisateur dans POSTMAN
+
+26- Restrictions
+    créer automatiquement un token lors de l'enregistrement d'un user dans le UserSerializer 
+    creer la fonction create pour implementer la creation du token
+    dans settings.py creer l'objet REST_FRAMEWORK et le configurer pour restreindre l'accès aux
+    simples users, pour cela ajouter permission_classes dans views.py pour proteger la route souhaitée
+    dans la classe MovieViewSet par exemple
