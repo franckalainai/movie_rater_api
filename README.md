@@ -65,3 +65,10 @@
 23- renseigner le token dans les routes pour avoir l'autorisation de les utiliser
     exemple: dans POSTMAN, pour obtenir les movies
     dans le header, ajouter Authorization - Token suivi du token
+
+24- Enregister un utilisateur
+    créer la class UserViewSet dans views.py puis la configurer
+    créer UserSerializer dans serializers.py
+    dans urls.pi du repertoire api, enregistrer le UserViewSet
+
+25- créer un utilisateur dans POSTMAN

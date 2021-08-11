@@ -1,15 +1,18 @@
-from rest_framework.serializers import Serializer
 from api.models import Movie
 from django.shortcuts import render
 from rest_framework import viewsets, status
 from .models import Movie, Rating
-from .serializers import MovieSerializer, RatingSerializer
+from .serializers import MovieSerializer, RatingSerializer, UserSerializer
 from django.contrib.auth.models import User
 from rest_framework.authentication import TokenAuthentication
 
 # custom methods
 from rest_framework.response import Response
 from rest_framework.decorators import action
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
